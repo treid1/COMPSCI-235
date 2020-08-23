@@ -33,4 +33,8 @@ def create_app():
     def shows_news():
         return "Today’s news is ..."
 
+    @app.route('/greeting')
+    def print_request_name():
+        return "I don't know how to do this and it's 11. I've been doing this for the past 4 hours and I'm tired, so I'm gonna stop now. Please enter your name: "
+
     return app
